@@ -1,0 +1,468 @@
+@import "mixins";
+
+$pcolor: #ffffff;
+$bgcolor: #222222;
+$hcolor: #fafafa;
+$verde67: #67A828;
+$azul11: #113362;
+@import 'css/fonts';
+
+body{
+	background: $bgcolor;
+	font-size: 16px;
+	margin: 0;
+	h1{
+		font-size: 54px;
+		margin: 1.2em 0 1em 0;
+		@include encabezados();
+	}
+	h2{
+		font-size: 1.5em;
+		@include encabezados();
+	}
+	h3{
+		font-size: 1.4em;
+		@include encabezados();
+	}
+	h4{
+		font-size: 1.3em;
+		@include encabezados();
+	}
+	p{
+		font-size: 1em;
+		color: $pcolor;
+		font-family: 'Lato';
+		font-weight: normal;
+	}
+	.dirjcc{
+		margin-top: -10px;
+		align-self: flex-start;
+	}
+	.reconocimientos{
+		padding-top: 200px;
+	}
+	.button{
+		background: #EE6D11;
+		border-bottom: 3px solid #99592B;
+		border-left: 3px solid #99592B;
+		border-right: none;
+		border-top: none;
+		color: white;
+		margin: 0 auto;
+    padding: 1em 2em;
+    font-family: Raleway;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    &:hover{
+    	text-decoration: none;
+    }
+
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 3em;
+	}
+	canvas.sketch {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    
+	}
+	section{
+
+    background-position: top center;
+	background-size: cover;
+		&#fila1{
+					background: url('img/cabecerabg1.jpg');
+					background-size: cover;
+		}
+		&#fila2{
+			background: url('img/fila2.jpg');
+			min-height: 1185px;
+			background-size: cover;
+		}
+	}
+	.cajas{
+				display: flex;
+				justify-content: space-around;
+				margin: 0em auto;
+				position: relative;
+    		z-index: 2;
+    		flex-wrap: wrap;
+				.caja{
+					cursor: pointer;
+					padding: 2.5em;
+					&:hover{
+						opacity: 0.5;
+						transform: scale(1.1);
+					}
+				}
+			}	
+	}
+	
+	.logoyanios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .logo{
+			text-align: center;
+			margin-right: 20px;
+		}
+	}
+	section#contenido{
+    width: 100%;
+    position: fixed;
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    z-index: 3;
+    visibility: hidden;
+	  opacity: 0;
+	  transition: visibility 0s, opacity 0.5s linear;
+		aside{
+			background: url('img/cabecerabg1.jpg');
+			background-position: top center;
+			width: 40%;
+	    transform: translateX(-100%);
+	    transition: transform 1s ease-out;
+			display: flex;
+	    justify-content: center;
+			align-items: flex-end;
+    	flex-direction: column;
+			.logo{
+		    align-self: flex-start;
+			}
+			.cntAside {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-direction: column;
+        padding-right: 20px;
+				height: 100%;
+				padding-bottom: 100px;
+		    width: 80%;
+        img.imgAsideContenido {
+				    width: 150px;
+				    padding: 40px 0 0px 0;
+				}
+				h2.asideh {
+				    font-size: 48px;
+				    text-shadow: 2px 2px #444444;
+						padding: 0;
+						//line-height: 0;
+				}
+		
+			}
+			.asidelink{
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				background: rgba(0,0,0,0.3);
+				padding: 15px 0;
+		    justify-content: space-around;
+    		align-items: center;
+    		.iniciolink{
+    			cursor: pointer;
+    			p {
+					  margin: 0;
+					  font-weight: bold;
+					}
+	    		.fa-stack-2x {
+				    color: white;
+					}	
+	    		.fa-stack-1x {
+				    color: #1A4388;
+					}	
+    		}
+				.iconoSide{
+					max-width: 70px;
+					margin: 8px;
+					cursor: pointer;
+					img{
+						max-width: 70px;
+						height: auto;
+					}
+					&:hover{
+						img{
+							border-radius: 50%;
+					    border: 1px solid white;
+					    padding: 5px;
+					    margin-top: -10px;
+						}
+					}
+				}
+			}
+		}
+		article{
+			width: 60%;
+			background: white;
+			color: black;
+			transform: translateX(100%);
+			transition: transform 1s ease-out;
+			text-align: justify;
+			#cntArticle {
+	        padding: 5px 140px 5px 50px;
+			    height: 100%;
+			    font-size: 16px;
+			    flex-direction: column;
+			    overflow: auto;
+					display: flex;
+					align-items: center;
+					//justify-content: center;
+					p.punteado {
+					    padding: 25px;
+					    border: 2px dotted $verde67;
+					}
+					.sentencia{
+						color: white;
+						background: $azul11;
+						padding: 15px;
+						margin: -33px -40px -34px auto;
+						float: right;
+						position: relative;
+						font-size: 12px;
+						max-width: 600px;
+						p{
+							display: none;
+						}
+						h4{
+							font-size: 16px;
+							font-style: italic;
+							text-transform: uppercase;
+							margin: 0;
+							padding: 0;
+							font-weight: normal;
+							cursor: pointer;
+						}
+						&:hover{
+							margin-top: -200px;
+							margin-bottom: -315px;
+							opacity: 0.95;
+							p{
+								display: inline-block;
+								color: white;
+							}
+							span{
+								display: none;
+							}
+						}
+					}
+					ul.procesoSubProcesosBox{
+				    display: flex;	
+				    li {
+							background: $verde67;
+							color: white;
+							padding: 30px 15px;
+							margin: 10px;
+							float: left;
+							font-family: 'Lato';
+							list-style: none;
+							p{
+								color: white;
+							}
+						}
+					}
+			    .registro2right {
+					    position: absolute;
+					    right: 10px;
+					    top: 10px;
+					    border: 1px solid #cccccc;
+			        padding: 20px 40px;
+					    text-align: center;
+					    color: #cccccc;
+					    cursor: pointer;
+					    height: 150px;
+					    width: 150px;
+					    margin-right: -10px;
+					    .tituloRegistroBox{
+					    	font-size: 12px;
+					    	text-decoration: none;
+					    }
+					    .mensajeRegistroBox{
+					    	font-size: 10px;
+					    	text-decoration: none;
+					    }
+					    a{
+					    	text-decoration: none;
+					    }
+					    &:hover{
+					    	background: whitesmoke;
+					    }
+					    a:hover{
+					    	height: 150px;
+					    	width: 150px;
+					    	display: flex;
+					    	flex-direction: column;
+
+					    	.tituloRegistroBox{
+					    		order: 1;
+									color: #034980;
+									font-size: 25px;
+									width: 150px;
+									margin: 0;
+									text-align: left;
+									border-bottom: 3px solid orange;
+									padding-bottom: 15px;
+					    	}
+					    	.mensajeRegistroBox{
+					    		display: none;
+
+					    	}
+					    	img{
+							    order: 2;
+							    flex-wrap: nowrap;
+							    width: 60px;
+							    align-self: flex-start;
+							    margin: 10px 0px;
+					    	}
+
+
+					    }
+					}
+					.registro1left {
+				    padding-right: 100px;
+					}
+			    p{
+			    	color: black;
+	    	    line-height: 25px;
+			    }
+			    img{
+			    	max-width: 100%;
+			    }
+			    .tablaRegistro{
+			    	max-width: 120% !important;
+			    }
+			}
+			table.tableAsideContenido {
+			    color: black;
+			    border-color: black;
+			    font-family: Lato;
+			    background: white;
+			    padding: 2px;
+					border-collapse: collapse;
+					border-spacing: 0;
+			    margin: 5px auto 25px auto;
+			    td, th{
+						border: 2px solid black;
+						padding: 4px;
+			    }
+			}
+		}
+		&.pantalla2{
+			visibility: visible;
+			opacity: 1;
+		  transition: visibility 0s, opacity 0.5s linear;
+			aside, article{
+				transform: translateX(0);
+			}
+		}
+	}
+	footer{
+		section#footer1 {
+		    background: white;
+		    display: flex;
+		    align-items: center;
+		    padding: 0.5em;
+		}
+		section#footer2{
+			background: #063458;
+			a{
+				&:hover{
+					color: #cccccc;
+				}
+			}
+			#contenedorf2{
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+			  justify-content: center;
+			  flex-wrap: wrap;
+				.columnas3{
+					width: 33%;
+				}
+			}
+			.columnaf{
+			  display: flex;
+			  align-items: center;
+			  flex-direction: column;
+			  justify-content: center;
+			}
+			#columna2{
+				border-left: 1px solid #305776;
+				border-right: 1px solid #305776;
+				padding-bottom: 3em;
+				a.button{
+					background: #67A828;
+					border-bottom-color: #5A7A39;
+					border-left-color: #5A7A39;
+					border-radius: 3px;
+				}
+				p{
+					font-size: 16px;
+					font-weight: normal;
+					padding: 0 2em;
+				}
+			}
+			#columna3{
+				ul{
+					list-style: none;
+					color: white;
+					padding: 0;
+					li{
+						padding: 0.2em 0;
+						a{
+							color: white;
+							text-decoration: none;
+							font-family: Lato;
+							i{
+								padding-right: 10px;
+							}
+						}
+					}
+				}
+			}
+			p{
+				color: white;
+				font-size: 13px;
+				font-weight: bold;
+				text-align: center;
+			}
+			.redesfooter{
+				display: flex;
+				width: 100%;
+				justify-content: space-around;
+				padding-top: 1em;
+				i{
+					font-size: 36px;
+					color: white;
+				}
+				a{
+					margin: 0 10px;
+				}
+			}
+		}
+		
+	}
+	.botonScrollDown {
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    z-index: 11111;
+    font-size: 35px;
+    color: #00529E;
+    cursor: pointer;
+    &:hover{
+    	color: #305776;
+    }
+  }

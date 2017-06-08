@@ -1,0 +1,372 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato/Lato-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato/Lato-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato/Lato-BoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 700; }
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato/Lato-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 100; }
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/Lato/Lato-LightItalic.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 100; }
+@font-face {
+  font-family: 'Raleway';
+  src: url(fonts/Raleway/Raleway-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url(fonts/Raleway/Raleway-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url(fonts/Raleway/Raleway-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: 'Raleway';
+  src: url(fonts/Raleway/Raleway-BoldItalic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: 700; }
+@font-face {
+  font-family: 'Raleway';
+  src: url(fonts/Raleway/Raleway-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 100; }
+@font-face {
+  font-family: 'Raleway';
+  src: url(fonts/Raleway/Raleway-LightItalic.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 100; }
+body {
+  background: #222222;
+  font-size: 16px;
+  margin: 0; }
+  body .botonScrollDown {
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    z-index: 11111;
+    font-size: 35px;
+    color: #00529E;
+    cursor: pointer; }
+    body .botonScrollDown:hover {
+      color: #305776; }
+  body h1 {
+    font-size: 54px;
+    margin: 1.2em 0 1em 0;
+    color: #fafafa;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-transform: uppercase; }
+  body h2 {
+    font-size: 1.5em;
+    color: #fafafa;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-transform: uppercase; }
+  body h3 {
+    font-size: 1.4em;
+    color: #fafafa;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-transform: uppercase; }
+  body h4 {
+    font-size: 1.3em;
+    color: #fafafa;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-transform: uppercase; }
+  body p {
+    font-size: 1em;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-weight: normal; }
+  body .button {
+    background: #EE6D11;
+    border-bottom: 3px solid #99592B;
+    border-left: 3px solid #99592B;
+    border-right: none;
+    border-top: none;
+    color: white;
+    margin: 0 auto;
+    padding: 1em 2em;
+    font-family: Raleway;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center; }
+    body .button:hover {
+      text-decoration: none; }
+  body .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em; }
+  body canvas.sketch {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0; }
+  body section {
+    background-position: top center; }
+    body section#fila1 {
+      background: url("img/cabecerabg1.jpg"); }
+    body section#fila2 {
+      background: url("img/fila2.jpg");
+      min-height: 1185px; }
+  body .cajas {
+    display: flex;
+    justify-content: space-around;
+    margin: 0em auto;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap; }
+    body .cajas .caja {
+      cursor: pointer;
+      padding: 2.5em; }
+      body .cajas .caja:hover {
+        opacity: 0.5;
+        transform: scale(1.1); }
+
+.logoyanios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .logoyanios .logo {
+    text-align: center;
+    margin-right: 20px; }
+
+section#contenido {
+  width: 100%;
+  position: fixed;
+  background: white;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  z-index: 3;
+  transition: visibility 0s, opacity 0.5s linear; }
+  section#contenido aside {
+    background: url("img/preguntasBg.jpg");
+    background-position: top center;
+    width: 25%;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-size: cover; }
+    section#contenido aside .logo {
+      align-self: flex-end;
+      padding-right: 40px; }
+    section#contenido aside .anios60 {
+      width: 110px;
+      align-self: flex-end;
+      padding-right: 40px;
+      padding-top: 20px; }
+    section#contenido aside .cntAside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      padding-bottom: 100px;
+      width: 100%; }
+      section#contenido aside .cntAside img.imgAsideContenido {
+        padding: 90px 0 0px 0; }
+      section#contenido aside .cntAside h2.asideh {
+        font-size: 28px;
+        text-shadow: 2px 2px #444444;
+        padding: 0 80px; }
+    section#contenido aside .asidelink {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 15px 0;
+      justify-content: space-around;
+      align-items: center; }
+      section#contenido aside .asidelink .iniciolink {
+        cursor: pointer; }
+        section#contenido aside .asidelink .iniciolink p {
+          margin: 0;
+          font-weight: bold; }
+        section#contenido aside .asidelink .iniciolink .fa-stack-2x {
+          color: white; }
+        section#contenido aside .asidelink .iniciolink .fa-stack-1x {
+          color: #1A4388; }
+      section#contenido aside .asidelink .iconoSide {
+        max-width: 70px;
+        margin: 8px;
+        cursor: pointer; }
+        section#contenido aside .asidelink .iconoSide img {
+          max-width: 70px;
+          height: auto; }
+  section#contenido article {
+    width: 75%;
+    background: #EEEEEE;
+    color: black;
+    transform: translateX(100%);
+    transition: transform 1s ease-out; }
+    section#contenido article #cntArticle {
+      padding: 5px 40px 5px 50px;
+      height: 100%;
+      font-size: 16px;
+      flex-direction: column;
+      overflow: auto; }
+      section#contenido article #cntArticle .masPreguntas {
+        padding-top: 30px; }
+      section#contenido article #cntArticle .registro2right {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: 1px solid #cccccc;
+        padding: 20px 40px;
+        text-align: center;
+        color: #cccccc;
+        cursor: pointer; }
+        section#contenido article #cntArticle .registro2right .tituloRegistroBox {
+          font-size: 12px;
+          text-decoration: none; }
+        section#contenido article #cntArticle .registro2right .mensajeRegistroBox {
+          font-size: 10px;
+          text-decoration: none; }
+        section#contenido article #cntArticle .registro2right a {
+          text-decoration: none; }
+      section#contenido article #cntArticle .registro1left {
+        padding-right: 100px; }
+      section#contenido article #cntArticle p {
+        color: black;
+        line-height: 25px; }
+      section#contenido article #cntArticle img {
+        max-width: 100%; }
+      section#contenido article #cntArticle .tablaRegistro {
+        max-width: 120% !important; }
+      section#contenido article #cntArticle .asteriscoImgRight, section#contenido article #cntArticle .asteriscoImgLeft {
+        opacity: 0.7;
+        margin: 30px 30px 30px 60px;
+        width: 170px; }
+      section#contenido article #cntArticle .asterisco {
+        background: #F1592A;
+        margin-left: 100px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column; }
+        section#contenido article #cntArticle .asterisco.asteriscoLeft {
+          width: 60%;
+          float: left;
+          margin-top: 40px; }
+          section#contenido article #cntArticle .asterisco.asteriscoLeft p {
+            font-size: 20px; }
+        section#contenido article #cntArticle .asterisco.asteriscoRight {
+          width: 60%;
+          float: right;
+          margin-top: 40px; }
+          section#contenido article #cntArticle .asterisco.asteriscoRight p {
+            font-size: 20px; }
+        section#contenido article #cntArticle .asterisco span {
+          color: #113363;
+          font-size: 35px;
+          margin-top: -35px;
+          margin-left: -35px; }
+        section#contenido article #cntArticle .asterisco p {
+          color: white;
+          padding: 30px;
+          font-size: 24px;
+          line-height: 27px;
+          margin: 0px;
+          margin-top: -30px; }
+        section#contenido article #cntArticle .asterisco a {
+          background: #113363;
+          color: white;
+          font-family: 'Lato';
+          font-size: 18px;
+          padding: 10px 20px;
+          margin: 0 auto;
+          margin-bottom: -15px; }
+      section#contenido article #cntArticle .preguntaBox {
+        width: 98px;
+        margin: 0 5px;
+        border: 2px dotted #F1592A;
+        font-size: 12px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 80px;
+        float: left;
+        height: 160px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        transition: background ease-in-out .5s, opacity ease-in-out .3s; }
+        section#contenido article #cntArticle .preguntaBox p {
+          font-size: 14px;
+          font-family: 'Lato';
+          font-style: italic;
+          line-height: 14px;
+          color: #666666; }
+        section#contenido article #cntArticle .preguntaBox img {
+          margin-top: -60px;
+          transition: transform ease-out .3s; }
+        section#contenido article #cntArticle .preguntaBox:hover {
+          background: #cccccc;
+          cursor: pointer;
+          opacity: 0.7; }
+          section#contenido article #cntArticle .preguntaBox:hover img {
+            transform: rotate(10deg); }
+      section#contenido article #cntArticle h3 {
+        color: #2479BC;
+        text-transform: initial;
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: left; }
+    section#contenido article table.tableAsideContenido {
+      color: black;
+      border-color: #333333;
+      font-family: Lato;
+      background: white;
+      padding: 2px;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin: 5px auto 25px auto; }
+      section#contenido article table.tableAsideContenido td, section#contenido article table.tableAsideContenido th {
+        border: 2px solid black;
+        padding: 4px; }
+  section#contenido.pantalla2 {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear; }
+    section#contenido.pantalla2 aside, section#contenido.pantalla2 article {
+      transform: translateX(0); }
+
+/*# sourceMappingURL=stylePreguntas.css.map */

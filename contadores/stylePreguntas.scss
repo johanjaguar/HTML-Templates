@@ -1,0 +1,371 @@
+@import "mixins";
+
+$pcolor: #ffffff;
+$bgcolor: #222222;
+$hcolor: #fafafa;
+
+@import 'css/fonts';
+
+body{
+    background: $bgcolor;
+    font-size: 16px;
+    margin: 0;
+    .botonScrollDown {
+        position: fixed;
+        bottom: 25px;
+        right: 35px;
+        z-index: 11111;
+        font-size: 35px;
+        color: #00529E;
+        cursor: pointer;
+        &:hover{
+            color: #305776;
+        }
+    }
+    h1{
+        font-size: 54px;
+        margin: 1.2em 0 1em 0;
+        @include encabezados();
+    }
+    h2{
+        font-size: 1.5em;
+        @include encabezados();
+    }
+    h3{
+        font-size: 1.4em;
+        @include encabezados();
+    }
+    h4{
+        font-size: 1.3em;
+        @include encabezados();
+    }
+    p{
+        font-size: 1em;
+        color: $pcolor;
+        font-family: 'Lato';
+        font-weight: normal;
+    }
+    .button{
+        background: #EE6D11;
+        border-bottom: 3px solid #99592B;
+        border-left: 3px solid #99592B;
+        border-right: none;
+        border-top: none;
+        color: white;
+        margin: 0 auto;
+        padding: 1em 2em;
+        font-family: Raleway;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3em;
+    }
+    canvas.sketch {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    
+    }
+    section{
+
+    background-position: top center;
+    
+        &#fila1{
+                    background: url('img/cabecerabg1.jpg');
+        }
+        &#fila2{
+            background: url('img/fila2.jpg');
+            min-height: 1185px;
+        }
+    }
+    .cajas{
+                display: flex;
+                justify-content: space-around;
+                margin: 0em auto;
+                position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+                .caja{
+                    cursor: pointer;
+                    padding: 2.5em;
+                    &:hover{
+                        opacity: 0.5;
+                        transform: scale(1.1);
+                    }
+                }
+            }   
+    }
+    
+    .logoyanios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .logo{
+            text-align: center;
+            margin-right: 20px;
+        }
+    }
+    section#contenido{
+        width: 100%;
+        position: fixed;
+        background: white;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        z-index: 3;
+        transition: visibility 0s, opacity 0.5s linear;
+        aside{
+            background: url('img/preguntasBg.jpg');
+            background-position: top center;
+            width: 25%;
+            transform: translateX(-100%);
+            transition: transform 1s ease-out;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            background-size: cover;
+            .logo{
+                align-self: flex-end;
+                padding-right: 40px;
+            }
+            .anios60{
+                width: 110px;
+                align-self: flex-end;
+                padding-right: 40px;
+                padding-top: 20px;
+            }
+            .cntAside {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                padding-bottom: 100px;
+                width: 100%;
+                img.imgAsideContenido {
+                    padding: 90px 0 0px 0;
+                }
+                h2.asideh {
+                    font-size: 28px;
+                    text-shadow: 2px 2px #444444;
+                    padding: 0 80px;
+                        //line-height: 0;
+                }
+        
+            }
+            .asidelink{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                background: rgba(0,0,0,0.3);
+                padding: 15px 0;
+                justify-content: space-around;
+                align-items: center;
+                .iniciolink{
+                    cursor: pointer;
+                    p {
+                          margin: 0;
+                          font-weight: bold;
+                        }
+                    .fa-stack-2x {
+                        color: white;
+                        }   
+                    .fa-stack-1x {
+                        color: #1A4388;
+                        }   
+                }
+                .iconoSide{
+                    max-width: 70px;
+                    margin: 8px;
+                    cursor: pointer;
+                    img{
+                        max-width: 70px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        article{
+            width: 75%;
+            background: #EEEEEE;
+            color: black;
+            transform: translateX(100%);
+            transition: transform 1s ease-out;
+            #cntArticle {
+                padding: 5px 40px 5px 50px;
+                height: 100%;
+                font-size: 16px;
+                flex-direction: column;
+                overflow: auto;
+                .masPreguntas{
+                   padding-top: 30px;
+                }
+                .registro2right {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    border: 1px solid #cccccc;
+                    padding: 20px 40px;
+                    text-align: center;
+                    color: #cccccc;
+                    cursor: pointer;
+                    .tituloRegistroBox{
+                        font-size: 12px;
+                        text-decoration: none;
+                    }
+                    .mensajeRegistroBox{
+                        font-size: 10px;
+                        text-decoration: none;
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .registro1left {
+                    padding-right: 100px;
+                }
+                p{
+                    color: black;
+                    line-height: 25px;
+                }
+                img{
+                    max-width: 100%;
+                }
+                .tablaRegistro{
+                    max-width: 120% !important;
+                }
+                .asteriscoImgRight, .asteriscoImgLeft{
+                    opacity: 0.7;
+                    margin: 30px 30px 30px 60px;
+                    width: 170px;
+                }
+                .asterisco{
+                    background: #F1592A;
+                    margin-left: 100px;
+                    margin-top: 70px;
+                    display: flex;
+                    flex-direction: column;
+                    &.asteriscoLeft{
+                        width: 60%;
+                        float: left;
+                        margin-top: 40px;
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                    &.asteriscoRight{
+                        width: 60%;
+                        float: right;
+                        margin-top: 40px;
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+
+                    span{
+                        color: #113363;
+                        font-size: 35px;
+                        margin-top: -35px;
+                        margin-left: -35px;
+                    }
+                    p{
+                        color: white;
+                        padding: 30px;
+                        font-size: 24px;
+                        line-height: 27px;
+                        margin: 0px;
+                        margin-top: -30px;
+                    }
+                    a{
+                        background: #113363;
+                        color: white;
+                        font-family: 'Lato';
+                        font-size: 18px; 
+                        padding: 10px 20px;
+                        margin: 0 auto;
+                        margin-bottom: -15px;
+                    }
+                }
+                .preguntaBox{
+                    width: 98px;
+                    margin: 0 5px;
+                    border: 2px dotted #F1592A;
+                    font-size: 12px;
+                    text-align: center;
+                    padding: 20px;
+                    margin-top: 80px;
+                    float: left;
+                    height: 160px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    background: transparent;
+                    transition: background ease-in-out .5s, opacity ease-in-out .3s;
+                    p{
+                        font-size: 14px;
+                        font-family: 'Lato';
+                        font-style: italic;
+                        line-height: 14px;
+                        color: #666666;
+                    }
+                    img{
+                        margin-top: -60px;
+                        transition: transform ease-out .3s;
+                    }
+                    &:hover{
+                        background: #cccccc;
+                        cursor: pointer;
+                        opacity: 0.7;
+                        img{
+                            transform: rotate(10deg);
+                        }                    
+                    }    
+                }
+                h3{
+                    color: #2479BC;
+                    text-transform: initial;
+                    font-size: 20px;
+                    margin-top: 50px;
+                    text-align: left;
+                }
+            }
+            table.tableAsideContenido {
+                color: black;
+                border-color: #333333;
+                font-family: Lato;
+                background: white;
+                padding: 2px;
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 5px auto 25px auto;
+                td, th{
+                        border: 2px solid black;
+                        padding: 4px;
+                }
+            }
+        }
+        &.pantalla2{
+            visibility: visible;
+            opacity: 1;
+          transition: visibility 0s, opacity 0.5s linear;
+            aside, article{
+                transform: translateX(0);
+            }
+        }
+    }

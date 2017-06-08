@@ -1,0 +1,42 @@
+body{
+	font-family: 'Teko', sans-serif;
+	background: #DFE3E4;
+	padding: 0px;
+	margin: 0;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+header{
+	img{
+		max-width: 100%;
+	}
+}
+aside{
+	width: 33%;
+}
+article{
+	width: 66%;
+	img{
+		max-width: 100%;
+	}
+}
+nav{
+	width: 100%;
+	background: black;
+	ul{
+		li {
+	    float: left;
+	    padding: 10px;
+	    text-transform: uppercase;
+	    color: white;
+	    background: black;
+	    list-style: none;
+	    a{
+	    	color: white;
+	    	text-decoration: none;
+	    }
+		}	
+	}
+} 
