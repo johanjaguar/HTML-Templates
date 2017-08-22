@@ -1,0 +1,12 @@
+@import 'common/colors';
+@import 'components/header';
+@import 'components/slider';
+
+
+
+body {
+  background-color: $fondo-body;
+  color: $color-letra1;
+  margin: 0;
+}
+     
