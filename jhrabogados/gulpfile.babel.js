@@ -14,7 +14,7 @@ gulp.task( 'default',
     gulp.watch(  '**/*.js',
       {cwd: 'src/javascript'} ,
       ['scripts']);
-    gulp.watch('src/views/**/*.pug',
+    gulp.watch('**/*.pug',
       {cwd: 'src/views'} ,
       ['pug']);
     gulp.watch('index.pug',
