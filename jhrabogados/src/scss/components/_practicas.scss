@@ -1,0 +1,56 @@
+.practicas {
+	background: url('../images-op/fondo-practicas.jpg') center top no-repeat;
+	background-size: cover;
+	clear: both;
+	display: block;
+	float: left;
+	padding: 7em 0;
+	width: 100%;
+
+	&__lista {
+		font-family: $fte-roboto;
+		font-size: 18px;
+		font-weight: light;
+
+		li {
+			padding: 0.3em 0;
+		}
+	}
+
+	&__titulo {
+		background: url('../images-op/header-nuestras-practicas.png') center top no-repeat;
+		height: 160px;
+		margin: 0 auto 4em;
+		width: 400px;
+	}
+
+	&__texto {
+		float: left;
+		width: 40%;
+		padding: 0 5em;
+	}
+
+	&__conozca {
+    font-family: $fte-varela;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 2em;
+    text-transform: uppercase;
+	}
+
+	&__boton {
+		background: $orange-jaffa;
+		border-radius: 7px;
+		color: $white;
+		font-family: $fte-varela;
+		padding: 0.6em;
+		margin: 0 10px 0 2em;
+		text-decoration: none;
+	}
+
+	&__pdf-label {
+		font-family: $fte-roboto;
+		font-size: 12px;
+		font-weight: bold;
+	}
+}

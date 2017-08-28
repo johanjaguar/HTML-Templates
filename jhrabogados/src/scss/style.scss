@@ -1,8 +1,12 @@
+@import 'common/mixins';
+@import 'common/typography';
 @import 'common/colors';
 @import 'components/header';
 @import 'components/slider';
-
-
+@import 'components/firma';
+@import 'components/practicas';
+@import 'components/contacto';
+@import 'components/footer';
 
 body {
   background-color: $fondo-body;

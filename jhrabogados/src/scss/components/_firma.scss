@@ -1,0 +1,43 @@
+.firma {
+  clear: both;
+  display: block;
+  float: left;
+  padding: 5em 0;
+  width: 100%;
+
+  &__titulo {
+    background: url('../images-op/header-nuestra-firma.png') center top no-repeat;
+    font-family: $fte-varela;
+    height: 160px;
+    margin: 0 auto 4em;
+    width: 300px;
+  }
+
+  &__logo {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 50%;
+
+    &-img {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+
+  &__texto {
+    float: left;
+    font-family: $fte-roboto;
+    font-weight: light;
+    text-align: center;
+    width: 50%;
+
+    p {
+      font-family: $fte-roboto;
+      font-size: 18px;
+      line-height: 1.5;
+      padding: 0 3em;
+      text-align: left;
+    }
+  }
+}
