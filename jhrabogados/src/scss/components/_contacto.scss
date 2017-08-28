@@ -1,0 +1,77 @@
+.contacto {
+  clear: both;
+  padding: 7em 0;
+  width: 100%;
+
+  &__titulo {
+    background: url('../images-op/header-contacto.png') center top no-repeat;
+    font-family: $fte-varela;
+    height: 160px;
+    margin: 0 auto 2em;
+    width: 300px;
+  }
+
+  &__izquierda {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 7em 5em 7em;
+    width: 50%;
+  }
+
+  &__derecha {
+    float: left;
+    width: 50%;
+  }
+
+  &__informacion {
+    font-family: $fte-varela;
+    font-size: 28px;
+    padding-left: 20px;
+  }
+
+  &__lista {
+    li {
+      font-family: $fte-roboto;
+      font-size: 18px;
+      padding: .5em 0;
+    }
+  }
+
+  &__boton-enviar {
+    background: $fondo-boton-contacto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    color: $white;
+    font-family: $fte-varela;
+    font-size: 16px;
+    margin: 2em 0 0;
+    padding: .5em;
+    text-transform: uppercase;
+
+    &::after {
+      content: '>';
+      color: black;
+    }
+
+    &:hover,
+    &:focus {
+      background: black;
+      cursor: pointer;
+    }
+  }
+
+  .stylish {
+    background-color: transparent;
+    border: 0 none transparent;
+    border-bottom: 1px solid $color-borde-input;
+    color: $black;
+    font-family: $fte-roboto;
+    font-size: 15px;
+    margin: 1em 0;
+    outline: none;
+    padding: 1em;
+    width: 100%;
+  }
+}
+

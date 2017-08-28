@@ -25,22 +25,274 @@ header {
 /* line 2, src/scss/components/_slider.scss */
 .slider__slide {
   position: relative;
+  background: url(../images-op/slide.jpg) center top;
+  background-size: cover;
+  max-height: 640px;
 }
 
-/* line 6, src/scss/components/_slider.scss */
+/* line 9, src/scss/components/_slider.scss */
 .slider__img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 11, src/scss/components/_slider.scss */
+/* line 14, src/scss/components/_slider.scss */
 .slider__caption {
-  position: absolute;
-  top: 50%;
+  margin: 0 auto;
   max-width: 900px;
+  padding: 7em 0;
+  position: relative;
+  font-family: "Varela Round", sans-serif;
 }
 
-/* line 7, src/scss/style.scss */
+/* line 22, src/scss/components/_slider.scss */
+.slider__titulo {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 29, src/scss/components/_slider.scss */
+.slider__titulo::after {
+  background: url(../images-op/lineas-titulo.jpg) center top;
+  content: ' ';
+  display: block;
+  height: 3px;
+  margin: 30px auto;
+  position: relative;
+  width: 827px;
+}
+
+/* line 41, src/scss/components/_slider.scss */
+.slider__texto {
+  background: rgba(255, 255, 255, 0.1);
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 2em;
+  padding: 2em;
+  outline: 1px solid white;
+}
+
+/* line 1, src/scss/components/_firma.scss */
+.firma {
+  clear: both;
+  display: block;
+  float: left;
+  padding: 5em 0;
+  width: 100%;
+}
+
+/* line 8, src/scss/components/_firma.scss */
+.firma__titulo {
+  background: url("../images-op/header-nuestra-firma.png") center top no-repeat;
+  font-family: "Varela Round", sans-serif;
+  height: 160px;
+  margin: 0 auto 4em;
+  width: 300px;
+}
+
+/* line 16, src/scss/components/_firma.scss */
+.firma__logo {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 22, src/scss/components/_firma.scss */
+.firma__logo-img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* line 28, src/scss/components/_firma.scss */
+.firma__texto {
+  float: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: light;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 35, src/scss/components/_firma.scss */
+.firma__texto p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0 3em;
+  text-align: left;
+}
+
+/* line 1, src/scss/components/_practicas.scss */
+.practicas {
+  background: url("../images-op/fondo-practicas.jpg") center top no-repeat;
+  background-size: cover;
+  clear: both;
+  display: block;
+  float: left;
+  padding: 7em 0;
+  width: 100%;
+}
+
+/* line 10, src/scss/components/_practicas.scss */
+.practicas__lista {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: light;
+}
+
+/* line 15, src/scss/components/_practicas.scss */
+.practicas__lista li {
+  padding: 0.3em 0;
+}
+
+/* line 20, src/scss/components/_practicas.scss */
+.practicas__titulo {
+  background: url("../images-op/header-nuestras-practicas.png") center top no-repeat;
+  height: 160px;
+  margin: 0 auto 4em;
+  width: 400px;
+}
+
+/* line 27, src/scss/components/_practicas.scss */
+.practicas__texto {
+  float: left;
+  width: 40%;
+  padding: 0 5em;
+}
+
+/* line 33, src/scss/components/_practicas.scss */
+.practicas__conozca {
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 2em;
+  text-transform: uppercase;
+}
+
+/* line 41, src/scss/components/_practicas.scss */
+.practicas__boton {
+  background: #ef7d40;
+  border-radius: 7px;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  padding: 0.6em;
+  margin: 0 10px 0 2em;
+  text-decoration: none;
+}
+
+/* line 51, src/scss/components/_practicas.scss */
+.practicas__pdf-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 1, src/scss/components/_contacto.scss */
+.contacto {
+  clear: both;
+  padding: 7em 0;
+  width: 100%;
+}
+
+/* line 6, src/scss/components/_contacto.scss */
+.contacto__titulo {
+  background: url("../images-op/header-contacto.png") center top no-repeat;
+  font-family: "Varela Round", sans-serif;
+  height: 160px;
+  margin: 0 auto 2em;
+  width: 300px;
+}
+
+/* line 14, src/scss/components/_contacto.scss */
+.contacto__izquierda {
+  box-sizing: border-box;
+  float: left;
+  padding: 0 7em 5em 7em;
+  width: 50%;
+}
+
+/* line 21, src/scss/components/_contacto.scss */
+.contacto__derecha {
+  float: left;
+  width: 50%;
+}
+
+/* line 26, src/scss/components/_contacto.scss */
+.contacto__informacion {
+  font-family: "Varela Round", sans-serif;
+  font-size: 28px;
+  padding-left: 20px;
+}
+
+/* line 33, src/scss/components/_contacto.scss */
+.contacto__lista li {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: .5em 0;
+}
+
+/* line 40, src/scss/components/_contacto.scss */
+.contacto__boton-enviar {
+  background: #b0cc72;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  margin: 2em 0 0;
+  padding: .5em;
+  text-transform: uppercase;
+}
+
+/* line 52, src/scss/components/_contacto.scss */
+.contacto__boton-enviar::after {
+  content: '>';
+  color: black;
+}
+
+/* line 57, src/scss/components/_contacto.scss */
+.contacto__boton-enviar:hover, .contacto__boton-enviar:focus {
+  background: black;
+  cursor: pointer;
+}
+
+/* line 64, src/scss/components/_contacto.scss */
+.contacto .stylish {
+  background-color: transparent;
+  border: 0 none transparent;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: 1em 0;
+  outline: none;
+  padding: 1em;
+  width: 100%;
+}
+
+/* line 1, src/scss/components/_footer.scss */
+.footer {
+  background: #b0cc72;
+  clear: both;
+  padding: 1.5em;
+}
+
+/* line 6, src/scss/components/_footer.scss */
+.footer p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: 14px;
+  text-align: center;
+}
+
+/* line 11, src/scss/style.scss */
 body {
   background-color: #fff;
   color: #000;

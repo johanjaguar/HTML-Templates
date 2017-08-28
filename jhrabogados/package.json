@@ -40,13 +40,15 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^5.0.1",
-    "require-dir": "^0.3.2"
+    "require-dir": "^0.3.2",
+    "vinyl-ftp": "^0.6.0"
   },
   "dependencies": {
     "pug": "^2.0.0-rc.2"

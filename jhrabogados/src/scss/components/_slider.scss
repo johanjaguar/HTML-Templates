@@ -1,6 +1,9 @@
 .slider{
   &__slide{
     position: relative;
+    background: url(../images-op/slide.jpg) center top;
+    background-size: cover;
+    max-height: 640px;
   }
 
   &__img{
@@ -9,8 +12,41 @@
   }
 
   &__caption {
-    position: absolute;
-    top: 50%;
+    margin: 0 auto;
     max-width: 900px;
+    padding: 7em 0;
+    position: relative;
+    font-family: $fte-varela;
+  }
+
+  &__titulo {
+    color: $color-letra-slider;
+    font-family: $fte-varela;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+
+    &::after {
+      background: url(../images-op/lineas-titulo.jpg) center top;
+      content: ' ';
+      display: block;
+      height: 3px;
+      margin: 30px auto;
+      position: relative;
+      width: 827px;
+    }
+
+  }
+
+  &__texto {
+    background: rgba( $white, 0.1);
+    border: 10px solid rgba($black, 0.1);
+    color: $color-letra1;
+    font-family: $fte-varela;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 2em;
+    padding: 2em;
+    outline: 1px solid white;
   }
 }
