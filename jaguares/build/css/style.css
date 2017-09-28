@@ -1,0 +1,668 @@
+/* line 2, src/scss/style.scss */
+body {
+  margin: 0;
+}
+
+/* line 44, src/scss/_demo.scss */
+.container > header h2, p.info, .cb-slideshow, .cb-slideshow:after {
+  font-size: 16px;
+  font-style: italic;
+  color: #f8f8f8;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 54, src/scss/_demo.scss */
+p.codrops-demos a, p.codrops-demos a.current-demo, p.codrops-demos a.current-demo:hover {
+  display: inline-block;
+  border: 1px solid #6d0019;
+  padding: 4px 10px 3px;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 2px 3px;
+  font-weight: 800;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 5px;
+  background: #a90329;
+  background: linear-gradient(top, #a90329 0, #8f0222 44%, #6d0019 100%);
+}
+
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url("/build/fonts/BebasNeue-webfont.eot");
+  src: url("/build/fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("/build/fonts/BebasNeue-webfont.woff") format("woff"), url("/build/fonts/BebasNeue-webfont.ttf") format("truetype"), url("/build/fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 79, src/scss/_demo.scss */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 83, src/scss/_demo.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Constantia, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+  background: #000;
+  font-weight: 400;
+  font-size: 15px;
+  color: #aa3e03;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* line 94, src/scss/_demo.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 98, src/scss/_demo.scss */
+fieldset {
+  border: 0;
+}
+
+/* line 101, src/scss/_demo.scss */
+img {
+  border: 0;
+}
+
+/* line 104, src/scss/_demo.scss */
+input {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+
+/* line 110, src/scss/_demo.scss */
+address {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 114, src/scss/_demo.scss */
+caption {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 119, src/scss/_demo.scss */
+cite {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 123, src/scss/_demo.scss */
+code {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 127, src/scss/_demo.scss */
+dfn {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 131, src/scss/_demo.scss */
+th {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 136, src/scss/_demo.scss */
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 140, src/scss/_demo.scss */
+ol {
+  list-style: none;
+}
+
+/* line 143, src/scss/_demo.scss */
+ul {
+  list-style: none;
+}
+
+/* line 146, src/scss/_demo.scss */
+h1 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 150, src/scss/_demo.scss */
+h2 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 154, src/scss/_demo.scss */
+h3 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 158, src/scss/_demo.scss */
+h4 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 162, src/scss/_demo.scss */
+h5 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 166, src/scss/_demo.scss */
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 171, src/scss/_demo.scss */
+q:before {
+  content: '';
+}
+
+/* line 174, src/scss/_demo.scss */
+q:after {
+  content: '';
+}
+
+/* line 178, src/scss/_demo.scss */
+abbr {
+  border: 0;
+}
+
+/* line 181, src/scss/_demo.scss */
+acronym {
+  border: 0;
+}
+
+/* line 184, src/scss/_demo.scss */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 188, src/scss/_demo.scss */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* line 191, src/scss/_demo.scss */
+.container > header {
+  padding: 30px 30px 10px 20px;
+  margin: 0 20px 10px;
+  position: relative;
+  display: block;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* line 199, src/scss/_demo.scss */
+.container > header h1 {
+  font-family: BebasNeueRegular, Arial Narrow, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  position: relative;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 0 0 5px 0;
+}
+
+/* line 217, src/scss/_demo.scss */
+.clr {
+  clear: both;
+}
+
+/* line 224, src/scss/_demo.scss */
+p.codrops-demos {
+  display: block;
+  padding: 15px 0;
+}
+
+/* line 229, src/scss/_demo.scss */
+p.codrops-demos a.current-demo {
+  color: #a5727d;
+  background: #6d0019;
+}
+
+/* line 233, src/scss/_demo.scss */
+p.codrops-demos a.current-demo:hover {
+  color: #a5727d;
+  background: #6d0019;
+}
+
+/* line 239, src/scss/_demo.scss */
+p.codrops-demos a:hover {
+  background: #6d0019;
+}
+
+/* line 242, src/scss/_demo.scss */
+p.codrops-demos a:active {
+  background: #6d0019;
+  background: linear-gradient(top, #6d0019 0, #8f0222 56%, #a90329 100%);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+/* line 251, src/scss/_demo.scss */
+.codrops-top {
+  font-family: Arial, sans-serif;
+  line-height: 24px;
+  font-size: 11px;
+  width: 100%;
+  background: #000;
+  opacity: 0.9;
+  text-transform: uppercase;
+  z-index: 9999;
+  position: relative;
+  box-shadow: 1px 0 2px #000;
+}
+
+/* line 263, src/scss/_demo.scss */
+.codrops-top a {
+  padding: 0 10px;
+  letter-spacing: 1px;
+  color: #ddd;
+  display: block;
+  float: left;
+}
+
+/* line 269, src/scss/_demo.scss */
+.codrops-top a:hover {
+  color: #fff;
+}
+
+/* line 273, src/scss/_demo.scss */
+.codrops-top span.right {
+  float: right;
+}
+
+/* line 275, src/scss/_demo.scss */
+.codrops-top span.right a {
+  float: none;
+  display: inline;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 282, src/scss/_demo.scss */
+  .container > header {
+    text-align: center;
+  }
+  /* line 285, src/scss/_demo.scss */
+  p.codrops-demos {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+
+/* line 291, src/scss/_demo.scss */
+.ie7 body {
+  overflow: hidden;
+}
+
+/* line 25, src/scss/_slideshow.scss */
+.container > header h2, p.info, .cb-slideshow, .cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* line 35, src/scss/_slideshow.scss */
+.cb-slideshow {
+  margin: 0;
+}
+
+/* line 38, src/scss/_slideshow.scss */
+.cb-slideshow:after {
+  content: '';
+  background: transparent url("/build/images-op/micro-carbon.png") repeat top left;
+}
+
+/* line 44, src/scss/_slideshow.scss */
+.cb-slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 48s linear infinite 0s;
+}
+
+/* line 58, src/scss/_slideshow.scss */
+.cb-slideshow li div {
+  z-index: 1000;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  animation: titleAnimation 36s linear infinite 0s;
+}
+
+/* line 68, src/scss/_slideshow.scss */
+.cb-slideshow li div h3 {
+  font-family: BebasNeueRegular, Arial Narrow, Arial, sans-serif;
+  font-size: 240px;
+  padding: 0;
+  line-height: 200px;
+}
+
+/* line 76, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(2) span {
+  background-image: url("/build/images-op/1.jpg");
+  animation-delay: 6s;
+}
+
+/* line 80, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(2) div {
+  animation-delay: 6s;
+}
+
+/* line 85, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(3) span {
+  background-image: url("/build/images-op/2.jpg");
+  animation-delay: 12s;
+}
+
+/* line 89, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(3) div {
+  animation-delay: 12s;
+}
+
+/* line 94, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(4) span {
+  background-image: url("/build/images-op/5.jpg");
+  animation-delay: 18s;
+}
+
+/* line 98, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(4) div {
+  animation-delay: 18s;
+}
+
+/* line 103, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(5) span {
+  background-image: url("/build/images-op/4.jpg");
+  animation-delay: 24s;
+}
+
+/* line 107, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(5) div {
+  animation-delay: 24s;
+}
+
+/* line 112, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(6) span {
+  background-image: url("/build/images-op/3.jpg");
+  animation-delay: 30s;
+}
+
+/* line 116, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(6) div {
+  animation-delay: 30s;
+}
+
+/* line 121, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(7) span {
+  background-image: url("/build/images-op/6.jpg");
+  animation-delay: 36s;
+}
+
+/* line 125, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(7) div {
+  animation-delay: 36s;
+}
+
+/* line 130, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(8) span {
+  background-image: url("/build/images-op/7.jpg");
+  animation-delay: 42s;
+}
+
+/* line 134, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(8) div {
+  animation-delay: 42s;
+}
+
+/* line 138, src/scss/_slideshow.scss */
+.cb-slideshow li:nth-child(1) span {
+  background-image: url("/build/images-op/0.jpg");
+}
+
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes imageAnimation {
+  /* line 195, src/scss/_slideshow.scss */
+  0% {
+    opacity: 0;
+  }
+  /* line 198, src/scss/_slideshow.scss */
+  8% {
+    opacity: 1;
+  }
+  /* line 201, src/scss/_slideshow.scss */
+  17% {
+    opacity: 1;
+  }
+  /* line 204, src/scss/_slideshow.scss */
+  25% {
+    opacity: 0;
+  }
+  /* line 207, src/scss/_slideshow.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes titleAnimation {
+  /* line 282, src/scss/_slideshow.scss */
+  0% {
+    opacity: 0;
+  }
+  /* line 285, src/scss/_slideshow.scss */
+  8% {
+    opacity: 1;
+  }
+  /* line 288, src/scss/_slideshow.scss */
+  17% {
+    opacity: 1;
+  }
+  /* line 291, src/scss/_slideshow.scss */
+  19% {
+    opacity: 0;
+  }
+  /* line 294, src/scss/_slideshow.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  /* line 316, src/scss/_slideshow.scss */
+  .cb-slideshow li div h3 {
+    font-size: 140px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 321, src/scss/_slideshow.scss */
+  .cb-slideshow li div h3 {
+    font-size: 80px;
+  }
+}
+
+/* line 325, src/scss/_slideshow.scss */
+.no-cssanimations .cb-slideshow li span {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

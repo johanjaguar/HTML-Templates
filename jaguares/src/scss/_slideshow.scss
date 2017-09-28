@@ -1,0 +1,327 @@
+//colors
+$white: #fff;
+
+//fonts
+$font_0: BebasNeueRegular;
+$font_1: Arial Narrow;
+$font_2: Arial;
+$font_3: sans-serif;
+
+//urls
+$path: '/build/images-op/';
+$url_0: url($path + 'micro-carbon.png');
+$url_1: url($path + '0.jpg');
+$url_2: url($path + '1.jpg');
+$url_3: url($path + '2.jpg');
+$url_4: url($path + '5.jpg');
+$url_5: url($path + '4.jpg');
+$url_6: url($path + '3.jpg');
+$url_7: url($path + '6.jpg');
+$url_8: url($path + '7.jpg');
+
+//@extend-elements
+//original selectors
+//.cb-slideshow, .cb-slideshow:after
+%extend_1 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+
+.cb-slideshow {
+	@extend %extend_1;
+  margin: 0;
+	&:after {
+		@extend %extend_1;
+		content: '';
+		background: transparent $url_0 repeat top left;
+	}
+	li {
+		span {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: transparent;
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: none;
+			opacity: 0;
+			z-index: 0;
+			animation: imageAnimation 48s linear infinite 0s;
+		}
+		div {
+			z-index: 1000;
+			position: absolute;
+			bottom: 30px;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			opacity: 0;
+			color: $white;
+			animation: titleAnimation 36s linear infinite 0s;
+			h3 {
+				font-family: $font_0, $font_1, $font_2, $font_3;
+				font-size: 240px;
+				padding: 0;
+				line-height: 200px;
+			}
+		}
+		&:nth-child(2) {
+			span {
+				background-image: $url_2;
+				animation-delay: 6s;
+			}
+			div {
+				animation-delay: 6s;
+			}
+		}
+		&:nth-child(3) {
+			span {
+				background-image: $url_3;
+				animation-delay: 12s;
+			}
+			div {
+				animation-delay: 12s;
+			}
+		}
+		&:nth-child(4) {
+			span {
+				background-image: $url_4;
+				animation-delay: 18s;
+			}
+			div {
+				animation-delay: 18s;
+			}
+		}
+		&:nth-child(5) {
+			span {
+				background-image: $url_5;
+				animation-delay: 24s;
+			}
+			div {
+				animation-delay: 24s;
+			}
+		}
+		&:nth-child(6) {
+			span {
+				background-image: $url_6;
+				animation-delay: 30s;
+			}
+			div {
+				animation-delay: 30s;
+			}
+		}
+    &:nth-child(7) {
+      span {
+        background-image: $url_7;
+        animation-delay: 36s;
+      }
+      div {
+        animation-delay: 36s;
+      }
+    }
+    &:nth-child(8) {
+      span {
+        background-image: $url_8;
+        animation-delay: 42s;
+      }
+      div {
+        animation-delay: 42s;
+      }
+    }
+		&:nth-child(1) span {
+			background-image: $url_1;
+		}
+	}
+}
+@-webkit-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-moz-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-o-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-ms-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	8% {
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes titleAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	19% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-moz-keyframes titleAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	19% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-o-keyframes titleAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	19% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-ms-keyframes titleAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	19% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes titleAnimation {
+	0% {
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	19% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@media screen and(max-width: 1140px) {
+	.cb-slideshow li div h3 {
+		font-size: 140px;
+	}
+}
+@media screen and(max-width: 600px) {
+	.cb-slideshow li div h3 {
+		font-size: 80px;
+	}
+}
+.no-cssanimations .cb-slideshow li span {
+	opacity: 1;
+}

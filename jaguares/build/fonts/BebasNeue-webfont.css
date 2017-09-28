@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url("BebasNeue-webfont.eot");
+    src: url("BebasNeue-webfont.eot?#iefix") format("embedded-opentype"),
+         url("BebasNeue-webfont.woff2") format("woff2"),
+         url("BebasNeue-webfont.woff") format("woff"),
+         url("BebasNeue-webfont.ttf") format("ttf"),
+         url("BebasNeue-webfont.svg#BebasNeue") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
