@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-/* line 44, src/scss/_demo.scss */
+/* line 45, src/scss/_demo.scss */
 .container > header h2, p.info, .cb-slideshow, .cb-slideshow:after {
   font-size: 16px;
   font-style: italic;
@@ -11,7 +11,7 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-/* line 54, src/scss/_demo.scss */
+/* line 55, src/scss/_demo.scss */
 p.codrops-demos a, p.codrops-demos a.current-demo, p.codrops-demos a.current-demo:hover {
   display: inline-block;
   border: 1px solid #6d0019;
@@ -35,13 +35,13 @@ p.codrops-demos a, p.codrops-demos a.current-demo, p.codrops-demos a.current-dem
   font-style: normal;
 }
 
-/* line 79, src/scss/_demo.scss */
+/* line 80, src/scss/_demo.scss */
 html {
   margin: 0;
   padding: 0;
 }
 
-/* line 83, src/scss/_demo.scss */
+/* line 84, src/scss/_demo.scss */
 body {
   margin: 0;
   padding: 0;
@@ -54,23 +54,23 @@ body {
   overflow-x: hidden;
 }
 
-/* line 94, src/scss/_demo.scss */
+/* line 95, src/scss/_demo.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 98, src/scss/_demo.scss */
+/* line 99, src/scss/_demo.scss */
 fieldset {
   border: 0;
 }
 
-/* line 101, src/scss/_demo.scss */
+/* line 102, src/scss/_demo.scss */
 img {
   border: 0;
 }
 
-/* line 104, src/scss/_demo.scss */
+/* line 105, src/scss/_demo.scss */
 input {
   border: 1px solid #b0b0b0;
   padding: 3px 5px 4px;
@@ -78,129 +78,129 @@ input {
   width: 190px;
 }
 
-/* line 110, src/scss/_demo.scss */
+/* line 111, src/scss/_demo.scss */
 address {
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 114, src/scss/_demo.scss */
+/* line 115, src/scss/_demo.scss */
 caption {
   font-style: normal;
   font-weight: normal;
   text-align: left;
 }
 
-/* line 119, src/scss/_demo.scss */
+/* line 120, src/scss/_demo.scss */
 cite {
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 123, src/scss/_demo.scss */
+/* line 124, src/scss/_demo.scss */
 code {
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 127, src/scss/_demo.scss */
+/* line 128, src/scss/_demo.scss */
 dfn {
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 131, src/scss/_demo.scss */
+/* line 132, src/scss/_demo.scss */
 th {
   font-style: normal;
   font-weight: normal;
   text-align: left;
 }
 
-/* line 136, src/scss/_demo.scss */
+/* line 137, src/scss/_demo.scss */
 var {
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 140, src/scss/_demo.scss */
+/* line 141, src/scss/_demo.scss */
 ol {
   list-style: none;
 }
 
-/* line 143, src/scss/_demo.scss */
+/* line 144, src/scss/_demo.scss */
 ul {
   list-style: none;
 }
 
-/* line 146, src/scss/_demo.scss */
+/* line 147, src/scss/_demo.scss */
 h1 {
   font-size: 100%;
   font-weight: normal;
 }
 
-/* line 150, src/scss/_demo.scss */
+/* line 151, src/scss/_demo.scss */
 h2 {
   font-size: 100%;
   font-weight: normal;
 }
 
-/* line 154, src/scss/_demo.scss */
+/* line 155, src/scss/_demo.scss */
 h3 {
   font-size: 100%;
   font-weight: normal;
 }
 
-/* line 158, src/scss/_demo.scss */
+/* line 159, src/scss/_demo.scss */
 h4 {
   font-size: 100%;
   font-weight: normal;
 }
 
-/* line 162, src/scss/_demo.scss */
+/* line 163, src/scss/_demo.scss */
 h5 {
   font-size: 100%;
   font-weight: normal;
 }
 
-/* line 166, src/scss/_demo.scss */
+/* line 167, src/scss/_demo.scss */
 h6 {
   font-size: 100%;
   font-weight: normal;
 }
 
-/* line 171, src/scss/_demo.scss */
+/* line 172, src/scss/_demo.scss */
 q:before {
   content: '';
 }
 
-/* line 174, src/scss/_demo.scss */
+/* line 175, src/scss/_demo.scss */
 q:after {
   content: '';
 }
 
-/* line 178, src/scss/_demo.scss */
+/* line 179, src/scss/_demo.scss */
 abbr {
   border: 0;
 }
 
-/* line 181, src/scss/_demo.scss */
+/* line 182, src/scss/_demo.scss */
 acronym {
   border: 0;
 }
 
-/* line 184, src/scss/_demo.scss */
+/* line 185, src/scss/_demo.scss */
 a {
   color: #333;
   text-decoration: none;
 }
 
-/* line 188, src/scss/_demo.scss */
+/* line 189, src/scss/_demo.scss */
 .container {
   position: relative;
   text-align: center;
 }
 
-/* line 191, src/scss/_demo.scss */
+/* line 192, src/scss/_demo.scss */
 .container > header {
   padding: 30px 30px 10px 20px;
   margin: 0 20px 10px;
@@ -210,7 +210,7 @@ a {
   text-align: left;
 }
 
-/* line 199, src/scss/_demo.scss */
+/* line 200, src/scss/_demo.scss */
 .container > header h1 {
   font-family: BebasNeueRegular, Arial Narrow, Arial, sans-serif;
   font-size: 35px;
@@ -222,42 +222,42 @@ a {
   padding: 0 0 5px 0;
 }
 
-/* line 217, src/scss/_demo.scss */
+/* line 218, src/scss/_demo.scss */
 .clr {
   clear: both;
 }
 
-/* line 224, src/scss/_demo.scss */
+/* line 225, src/scss/_demo.scss */
 p.codrops-demos {
   display: block;
   padding: 15px 0;
 }
 
-/* line 229, src/scss/_demo.scss */
+/* line 230, src/scss/_demo.scss */
 p.codrops-demos a.current-demo {
   color: #a5727d;
   background: #6d0019;
 }
 
-/* line 233, src/scss/_demo.scss */
+/* line 234, src/scss/_demo.scss */
 p.codrops-demos a.current-demo:hover {
   color: #a5727d;
   background: #6d0019;
 }
 
-/* line 239, src/scss/_demo.scss */
+/* line 240, src/scss/_demo.scss */
 p.codrops-demos a:hover {
   background: #6d0019;
 }
 
-/* line 242, src/scss/_demo.scss */
+/* line 243, src/scss/_demo.scss */
 p.codrops-demos a:active {
   background: #6d0019;
   background: linear-gradient(top, #6d0019 0, #8f0222 56%, #a90329 100%);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
 }
 
-/* line 251, src/scss/_demo.scss */
+/* line 252, src/scss/_demo.scss */
 .codrops-top {
   font-family: Arial, sans-serif;
   line-height: 24px;
@@ -271,7 +271,7 @@ p.codrops-demos a:active {
   box-shadow: 1px 0 2px #000;
 }
 
-/* line 263, src/scss/_demo.scss */
+/* line 264, src/scss/_demo.scss */
 .codrops-top a {
   padding: 0 10px;
   letter-spacing: 1px;
@@ -280,28 +280,28 @@ p.codrops-demos a:active {
   float: left;
 }
 
-/* line 269, src/scss/_demo.scss */
+/* line 270, src/scss/_demo.scss */
 .codrops-top a:hover {
   color: #fff;
 }
 
-/* line 273, src/scss/_demo.scss */
+/* line 274, src/scss/_demo.scss */
 .codrops-top span.right {
   float: right;
 }
 
-/* line 275, src/scss/_demo.scss */
+/* line 276, src/scss/_demo.scss */
 .codrops-top span.right a {
   float: none;
   display: inline;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 282, src/scss/_demo.scss */
+  /* line 283, src/scss/_demo.scss */
   .container > header {
     text-align: center;
   }
-  /* line 285, src/scss/_demo.scss */
+  /* line 286, src/scss/_demo.scss */
   p.codrops-demos {
     position: relative;
     top: auto;
@@ -309,7 +309,7 @@ p.codrops-demos a:active {
   }
 }
 
-/* line 291, src/scss/_demo.scss */
+/* line 292, src/scss/_demo.scss */
 .ie7 body {
   overflow: hidden;
 }

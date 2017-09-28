@@ -28,6 +28,7 @@ $font_6: serif;
 $font_7: Arial Narrow;
 $font_8: Arial;
 $font_9: sans-serif;
+$font_10: monospace;
 
 //urls
 $pathfont: 'https://johanjaguar.github.io/HTML-Templates/jaguares/build/fonts/';
@@ -35,7 +36,7 @@ $pathfont: 'https://johanjaguar.github.io/HTML-Templates/jaguares/build/fonts/';
 $url_0: url($pathfont + 'BebasNeue-webfont.eot');
 $url_1: url($pathfont + 'BebasNeue-webfont.eot?#iefix');
 $url_2: url($pathfont + 'BebasNeue-webfont.woff');
-$url_3: url($pathfont + 'BebasNeue-webfont.ttf');
+$url_3: url($pathfont + 'BebasNeue-webfont.ttf'); 
 $url_4: url($pathfont + 'BebasNeue-webfont.svg#BebasNeueRegular');
 
 //@extend-elements
