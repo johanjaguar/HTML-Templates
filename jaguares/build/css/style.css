@@ -29,8 +29,8 @@ p.codrops-demos a, p.codrops-demos a.current-demo, p.codrops-demos a.current-dem
 
 @font-face {
   font-family: BebasNeueRegular;
-  src: url("../fonts/BebasNeue-webfont.eot");
-  src: url("../fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+  src: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/fonts/BebasNeue-webfont.eot");
+  src: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/fonts/BebasNeue-webfont.woff") format("woff"), url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/fonts/BebasNeue-webfont.ttf") format("truetype"), url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -332,7 +332,7 @@ p.codrops-demos a:active {
 /* line 38, src/scss/_slideshow.scss */
 .cb-slideshow:after {
   content: '';
-  background: transparent url("../images-op/micro-carbon.png") repeat top left;
+  background: transparent url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/micro-carbon.png") repeat top left;
 }
 
 /* line 44, src/scss/_slideshow.scss */
@@ -374,7 +374,7 @@ p.codrops-demos a:active {
 
 /* line 76, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(2) span {
-  background-image: url("../images-op/1.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/1.jpg");
   animation-delay: 6s;
 }
 
@@ -385,7 +385,7 @@ p.codrops-demos a:active {
 
 /* line 85, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(3) span {
-  background-image: url("../images-op/2.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/2.jpg");
   animation-delay: 12s;
 }
 
@@ -396,7 +396,7 @@ p.codrops-demos a:active {
 
 /* line 94, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(4) span {
-  background-image: url("../images-op/5.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/5.jpg");
   animation-delay: 18s;
 }
 
@@ -407,7 +407,7 @@ p.codrops-demos a:active {
 
 /* line 103, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(5) span {
-  background-image: url("../images-op/4.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/4.jpg");
   animation-delay: 24s;
 }
 
@@ -418,7 +418,7 @@ p.codrops-demos a:active {
 
 /* line 112, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(6) span {
-  background-image: url("../images-op/3.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/3.jpg");
   animation-delay: 30s;
 }
 
@@ -429,7 +429,7 @@ p.codrops-demos a:active {
 
 /* line 121, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(7) span {
-  background-image: url("../images-op/6.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/6.jpg");
   animation-delay: 36s;
 }
 
@@ -440,7 +440,7 @@ p.codrops-demos a:active {
 
 /* line 130, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(8) span {
-  background-image: url("../images-op/7.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/7.jpg");
   animation-delay: 42s;
 }
 
@@ -451,7 +451,7 @@ p.codrops-demos a:active {
 
 /* line 138, src/scss/_slideshow.scss */
 .cb-slideshow li:nth-child(1) span {
-  background-image: url("../images-op/0.jpg");
+  background-image: url("https://johanjaguar.github.io/HTML-Templates/jaguares/build/images-op/0.jpg");
 }
 
 @-webkit-keyframes imageAnimation {
